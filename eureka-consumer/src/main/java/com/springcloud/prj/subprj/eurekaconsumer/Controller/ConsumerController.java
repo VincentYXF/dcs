@@ -7,7 +7,7 @@ import org.springframework.web.client.RestTemplate;
 @RestController
 @RequestMapping("consumer")
 public class ConsumerController {
-    private final String url="http://localhost:8001/provider/get";
+    private final String url="http://localhost:6001/provider/get";
     @RequestMapping("get")
     public String getData(){
         RestTemplate restTemplate=new RestTemplate();
